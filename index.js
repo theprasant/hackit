@@ -26,7 +26,7 @@ app.post('/newotp', (req, res) => {
   let otpLen = req.query.len || 4;
   let otp = generateOTP(otpLen);
   otpsObj[otpId] = { len: otpLen, otp, attempts: 0, verified: false };
-  console.log(otpsObj)
+  // console.log(otpsObj)
   res.json({ msg: `New OTP created with id: ${otpId}, otp length: ${otpsObj[otpId].len}.\nNow you can verify at /verify/${otpId}?otp=YourOTP`, id: otpId, len: otpsObj[otpId].len, attempts: otpsObj[otpId].attempts });
 })
 
