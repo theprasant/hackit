@@ -1,0 +1,31 @@
+{
+  "name": "hackme",
+  "version": "1.0.0",
+  "description": "test hacking skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theprasant/hackme.git"
+  },
+  "keywords": [
+    "hack",
+    "penetration"
+  ],
+  "author": "prasant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theprasant/hackme/issues"
+  },
+  "homepage": "https://github.com/theprasant/hackme#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
